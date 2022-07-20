@@ -118,8 +118,8 @@ String Machine_Key_Value = "211"; //211 = Small bandsaw
 
 // A couple of contstants
 
-const char* ssid = "LTS_CDT";
-const char* password =  "ProCurve1800-24G";
+const char* ssid = "ssid";
+const char* password =  "password";
 const char* connection_test = "http://enrichment.longridgetowers.com/dt/connection_test.php?Scanner=";
 String check_in = "http://enrichment.longridgetowers.com/scan_rfid/check_in.php?Scanner=" + Scanner + "&IP=";
 unsigned long previousMillis = 0;        // will store last time the WiFi was active
@@ -143,7 +143,7 @@ void setup() {
   // Hostname defaults to esp3232-[MAC]
   ArduinoOTA.setHostname("RFID-8");
 
-  // Password "iamgroot" hashed
+  // Password "whatever I chose" hashed
   // ArduinoOTA.setPassword("plaintext");
 
   // Password can be set with it's md5 value as well
